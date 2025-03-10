@@ -67,8 +67,33 @@
         </header>
         <section id="about">
             <h2>Find A Location</h2>
-            <p>Looking to enjoy our delicious offerings? Use our location finder to discover the nearest restaurant to you! Whether you're dining in or picking up your favorite meal, we aim to make your experience convenient and enjoyable. Enter your city or zip code below to get directions and explore our menu options at your local restaurant. We can’t wait to serve you!</p>
+            <p>
+                Looking to enjoy our delicious offerings? Use our location finder to discover the nearest restaurant to
+                you! Whether you're dining in or picking up your favorite meal, we aim to make your experience
+                convenient and enjoyable. Enter your city or zip code below to get directions and explore our menu
+                options at your local restaurant. We can’t wait to serve you!
+            </p>
         </section>
+        <div id="map" style="width: 100%; height: 500px"></div>
+
+        <script>
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.508742, -0.12085),
+                    zoom: 5
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+        <aside>
+            <h3>Hours of Operation</h3>
+            <p>Monday - Friday: 7:00am - 9:00pm</p>
+            <p>Saturday: 8:00am - 10:00pm</p>
+            <p>Sunday: 8:00am - 8:00pm</p>
+        </aside>
         <footer>
             <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
         </footer>
