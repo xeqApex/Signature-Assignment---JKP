@@ -119,7 +119,27 @@ li.menu {
     color: #000000;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea,
+select {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
 
 
 
