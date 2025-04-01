@@ -21,7 +21,6 @@
                             <li><a href="daily.specials.html">Daily Specials</a></li>
                         </ul>
                     </li>
-                    <li><a href="reservation.html">Reservation</a></li>
                     <li><a href="order.online.html">Order Online</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="career.html">Career</a></li>
@@ -32,25 +31,32 @@
         </header>
 
         <main>
-            <section id="home">
-                <h1>Home Section</h1>
-                <p>This is the home section of the webpage.</p>
+            <section id="reservation-form">
+                <h2>Make a Reservation</h2>
+                <p>
+                    We invite you to experience the warmth and hospitality of our restaurant. To ensure that you have
+                    the best dining experience possible, we recommend making a reservation ahead of time. Whether it’s a
+                    special occasion or just a night out, our team is here to accommodate you. Please fill out the
+                    reservation form to secure your table, and we look forward to welcoming you soon!
+                </p>
+                <section id="images">
+                    <img
+                        src="https://images.unsplash.com/photo-1457904297262-2dcf97b883ef?q=80&w=3117&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Restaurant Interior"
+                        class="responsive-img" />
+                </section>
+
+                <form id="reserveForm">
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date" required />
+
+                    <label for="time">Reservation Time:</label>
+                    <input type="time" id="time" name="time" required />
+
+                    <button type="submit">Submit Reservation</button>
+                </form>
             </section>
 
-            <section id="about">
-                <h1>About Section</h1>
-                <p>This section contains information about the website.</p>
-            </section>
-
-            <section id="services">
-                <h1>Services</h1>
-                <p>Details about the services provided can be found here.</p>
-            </section>
-
-            <section id="contact">
-                <h1>Contact</h1>
-                <p>Here's how you can get in touch.</p>
-            </section>
             <section class="contact-info">
                 <h2>Location</h2>
                 <p class="address">123 Main Street, llentown, PA, 18101</p>

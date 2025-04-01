@@ -3,184 +3,169 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eno Kitchen - Dinner</title>
         <link rel="stylesheet" href="styles.css" />
+        <title>Dinner - Eno Kitchen</title>
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.png" alt="Eno Kitchen Logo" />
+            <img src="logo.png" alt="Logo" class="logo" />
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a>
-                        <ul class="dropdown">
-                            <li><a href="faqs.html">FAQ's</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li>
                         <a href="menu.html">Menu</a>
-                        <ul class="dropdown">
+                        <ul class="submenu">
                             <li><a href="breakfast.html">Breakfast</a></li>
                             <li><a href="lunch.html">Lunch</a></li>
-                            <li><a href="dinner.html">Dinner</a></li>
                             <li><a href="daily.specials.html">Daily Specials</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="order.html">Order Online</a>
-                        <ul class="dropdown">
-                            <li><a href="catering.html">Catering</a></li>
-                            <li><a href="delivery.pickup.html">Delivery/Pickup</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="events.html">Private Events</a>
-                        <ul class="dropdown">
-                            <li><a href="inquire.html">Inquire</a></li>
-                            <li><a href="reservations.html">Reservations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="careers.html">Careers</a>
-                        <ul class="dropdown">
-                            <li><a href="open.positions.html">Open Positions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="shop.html">Shop</a>
-                        <ul class="dropdown">
-                            <li><a href="gift.cards.html">Gift Cards</a></li>
-                            <li><a href="merch.html">Merch</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                        <ul class="dropdown">
-                            <li><a href="find.a.location.html">Find A Location</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="order.online.html">Order Online</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="dinner">
-            <h2>Dinner</h2>
-            <p>Welcome to our Dinner Menu! Join us for a delicious dinner specials crafted to satisfy every palate. From succulent seafood to hearty meat dishes, each meal is prepared with the freshest ingredients and designed to deliver a memorable dining experience. Join us for an evening of culinary delight!</p>
-        </section>
-        
-        <h3>Appetizers</h3>
-        <div class="menu-item">
-            <span class="item-name">Garlic Bread</span>
-            <span class="item-price">$5.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Bruschetta</span>
-            <span class="item-price">$6.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Stuffed Mushrooms</span>
-            <span class="item-price">$7.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Caprese Salad Skewers</span>
-            <span class="item-price">$8.49</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Spinach Artichoke Dip</span>
-            <span class="item-price">$9.49</span>
-        </div>
-    
-    <div class="menu-category">
-        <h3>Salads</h3>
-        <div class="menu-item">
-            <span class="item-name">Caesar Salad</span>
-            <span class="item-price">$8.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Greek Salad</span>
-            <span class="item-price">$9.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">House Salad</span>
-            <span class="item-price">$7.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Quinoa Salad</span>
-            <span class="item-price">$10.49</span>
-        </div>
-    </div>
-    
-    <div class="menu-category">
-        <h3>Main Courses</h3>
-        <div class="menu-item">
-            <span class="item-name">Grilled Salmon</span>
-            <span class="item-price">$18.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Spaghetti Bolognese</span>
-            <span class="item-price">$14.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Chicken Alfredo</span>
-            <span class="item-price">$15.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Vegetable Stir-Fry</span>
-            <span class="item-price">$12.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Beef Tacos</span>
-            <span class="item-price">$13.99</span>
-        </div>
-    </div>
-    
-    <div class="menu-category">
-        <h3>Desserts</h3>
-        <div class="menu-item">
-            <span class="item-name">Tiramisu</span>
-            <span class="item-price">$6.49</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Cheesecake</span>
-            <span class="item-price">$5.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Chocolate Lava Cake</span>
-            <span class="item-price">$7.49</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Vanilla Ice Cream</span>
-            <span class="item-price">$3.49</span>
-        </div>
-    </div>
-    
-    <div class="menu-category">
-        <h3>Beverages</h3>
-        <div class="menu-item">
-            <span class="item-name">Coffee</span>
-            <span class="item-price">$2.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Soft Drinks</span>
-            <span class="item-price">$1.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Wine (Glass)</span>
-            <span class="item-price">$7.99</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Iced Tea</span>
-            <span class="item-price">$2.49</span>
-        </div>
-        <div class="menu-item">
-            <span class="item-name">Craft Beer</span>
-            <span class="item-price">$4.99</span>
-        </div>
-    </div>
+
+        <main>
+            <section id="dinner">
+                <h2>Dinner</h2>
+                <p>
+                    Welcome to our Dinner Menu! Join us for a delicious dinner specials crafted to satisfy every palate.
+                    From succulent seafood to hearty meat dishes, each meal is prepared with the freshest ingredients
+                    and designed to deliver a memorable dining experience. Join us for an evening of culinary delight!
+                </p>
+            </section>
+
+            <div class="menu-category">
+                <h3>Appetizers</h3>
+                <div class="menu-item">
+                    <span class="item-name">Garlic Bread</span>
+                    <span class="item-price">$5.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Bruschetta</span>
+                    <span class="item-price">$6.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Stuffed Mushrooms</span>
+                    <span class="item-price">$7.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Caprese Salad Skewers</span>
+                    <span class="item-price">$8.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Spinach Artichoke Dip</span>
+                    <span class="item-price">$9.49</span>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Salads</h3>
+                <div class="menu-item">
+                    <span class="item-name">Caesar Salad</span>
+                    <span class="item-price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Greek Salad</span>
+                    <span class="item-price">$9.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">House Salad</span>
+                    <span class="item-price">$7.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Quinoa Salad</span>
+                    <span class="item-price">$10.49</span>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Main Courses</h3>
+                <div class="menu-item">
+                    <span class="item-name">Grilled Salmon</span>
+                    <span class="item-price">$18.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Spaghetti Bolognese</span>
+                    <span class="item-price">$14.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chicken Alfredo</span>
+                    <span class="item-price">$15.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Vegetable Stir-Fry</span>
+                    <span class="item-price">$12.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Beef Tacos</span>
+                    <span class="item-price">$13.99</span>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-item">
+                    <span class="item-name">Tiramisu</span>
+                    <span class="item-price">$6.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Cheesecake</span>
+                    <span class="item-price">$5.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chocolate Lava Cake</span>
+                    <span class="item-price">$7.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Vanilla Ice Cream</span>
+                    <span class="item-price">$3.49</span>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Beverages</h3>
+                <div class="menu-item">
+                    <span class="item-name">Coffee</span>
+                    <span class="item-price">$2.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Soft Drinks</span>
+                    <span class="item-price">$1.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Wine (Glass)</span>
+                    <span class="item-price">$7.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Iced Tea</span>
+                    <span class="item-price">$2.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Craft Beer</span>
+                    <span class="item-price">$4.99</span>
+                </div>
+            </div>
+             <section class="contact-info">
+                <h2>Location</h2>
+                <p class="address">123 Main Street, llentown, PA, 18101</p>
+                <p class="hours">Hours of Availability:</p>
+                <ul class="hours-list">
+                    <li>Monday - Friday: 9 AM - 5 PM</li>
+                    <li>Saturday: 10 AM - 4 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
+        </main>
+
         <footer>
             <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

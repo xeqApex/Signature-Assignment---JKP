@@ -3,74 +3,61 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eno Kitchen - About</title>
         <link rel="stylesheet" href="styles.css" />
+        <title>About - Eno Kitchen</title>
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.png" alt="Eno Kitchen Logo" />
+            <img src="logo.png" alt="Logo" class="logo" />
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a>
-                        <ul class="dropdown">
-                            <li><a href="faqs.html">FAQ's</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li>
                         <a href="menu.html">Menu</a>
-                        <ul class="dropdown">
+                        <ul class="submenu">
                             <li><a href="breakfast.html">Breakfast</a></li>
                             <li><a href="lunch.html">Lunch</a></li>
                             <li><a href="dinner.html">Dinner</a></li>
                             <li><a href="daily.specials.html">Daily Specials</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="order.html">Order Online</a>
-                        <ul class="dropdown">
-                            <li><a href="catering.html">Catering</a></li>
-                            <li><a href="delivery.pickup.html">Delivery/Pickup</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="events.html">Private Events</a>
-                        <ul class="dropdown">
-                            <li><a href="inquire.html">Inquire</a></li>
-                            <li><a href="reservations.html">Reservations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="careers.html">Careers</a>
-                        <ul class="dropdown">
-                            <li><a href="open.positions.html">Open Positions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="shop.html">Shop</a>
-                        <ul class="dropdown">
-                            <li><a href="gift.cards.html">Gift Cards</a></li>
-                            <li><a href="merch.html">Merch</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                        <ul class="dropdown">
-                            <li><a href="find.a.location.html">Find A Location</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="order.online.html">Order Online</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn about our rich history and the family behind Eno Kitchen.</p>
-        </section>
+
+        <main>
+            <section id="about">
+                <h1>About Eno Kitchen</h1>
+                <p>
+                    Welcome to Eno Kitchen, a beloved family-owned restaurant established in 2025, located in the heart
+                    of Allentown, PA. We pride ourselves on serving delicious, homemade meals made from the freshest
+                    locally sourced ingredients.
+                </p>
+                <img
+                    src="https://images.unsplash.com/photo-1576723664541-23f84c3f93fb?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Eno Kitchen"
+                    class="centered-image" />
+            </section>
+            <section class="contact-info">
+                <h2>Location</h2>
+                <p class="address">123 Main Street, llentown, PA, 18101</p>
+                <p class="hours">Hours of Availability:</p>
+                <ul class="hours-list">
+                    <li>Monday - Friday: 9 AM - 5 PM</li>
+                    <li>Saturday: 10 AM - 4 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
+        </main>
+
         <footer>
             <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

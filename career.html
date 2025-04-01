@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Career - Eno Kitchen</title>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" alt="Logo" class="logo" />
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                        <ul class="submenu">
+                            <li><a href="breakfast.html">Breakfast</a></li>
+                            <li><a href="lunch.html">Lunch</a></li>
+                            <li><a href="dinner.html">Dinner</a></li>
+                            <li><a href="daily.specials.html">Daily Specials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="order.online.html">Order Online</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>Career</h2>
+                <p>
+                    Welcome to Eno Kitchen! We are dedicated to providing an unforgettable dining experience. Join us
+                    in our mission!
+                </p>
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1687697860831-edaf70e279dd?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Restaurant Image"
+                    class="centered" />
+            </section>
+
+            <section id="positions">
+                <h2>Open Positions</h2>
+                <ul>
+                    <li>Server</li>
+                    <li>Chef</li>
+                    <li>Dishwasher</li>
+                    <li>Host/Hostess</li>
+                </ul>
+            </section>
+
+            <section id="application">
+                <h2>Application Form</h2>
+                <form id="jobForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="position">Position:</label>
+                    <select id="position" name="position">
+                        <option value="server">Server</option>
+                        <option value="chef">Chef</option>
+                        <option value="dishwasher">Dishwasher</option>
+                        <option value="host">Host/Hostess</option>
+                    </select>
+
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
+
+                    <button type="submit">Submit Application</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

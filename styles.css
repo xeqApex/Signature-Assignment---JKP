@@ -1,86 +1,93 @@
 body {
-    font-family: "Julius Sans One", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #fff;
-    color: #000000;
+    background-image: url("https://plus.unsplash.com/premium_photo-1669865742039-e67964396cc8?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    color: black;
 }
 
 header {
-    background-color: #ffcc00;
-    padding: 20px;
+    background-color: #d2ab0f;
+    color: black;
+    padding: 1em 0;
     text-align: center;
+}
+
+/* logo */
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 nav ul {
-    list-style-type: none;
+    font-size: 1.38em;
+    list-style: none;
     padding: 0;
-    background: red;
-    margin: 0;
-    text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    position: relative;
+    display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
-    display: flex;
-    padding: 20px 25px;
+nav a {
+    color: black;
     text-decoration: none;
-    color: #333;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: hold;
-    text-align: center;
+}
+nav a:link {
+    color: black;
+}
+nav a:visited {
+    color: blue;
+}
+nav a:hover {
+    color: white;
+}
+
+
+main {
+    padding: 20px;
+    background-color: rgba(241, 241, 241, 0.8);
+    max-width: 1200px;
+    margin: auto;
 }
 
 section {
+    margin: 20px 0;
     padding: 20px;
-    margin: 10px;
-    background-color: #d9d9d9;
+    border: 1px solid #ddd;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea,
+select {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
     border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-}
-
-.gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.photo {
-    margin: 10px;
-    border: 2px solid #000000;
-    width: calc(25% - 20px);
-    box-sizing: border-box;
-}
-.photo img {
-    width: 100%;
-    height: auto;
-}
-
-li {
-    float: left;
-}
-
-li a:hover,
-.menu:hover .dropbtn {
-    background-color: #d9d9d9;
-}
-
-li.menu {
-    display: inline-block;
+    justify-content: center;
 }
 
 .menu-category {
@@ -109,97 +116,163 @@ li.menu {
     border-bottom: none;
 }
 
-.item-name {
-    font-size: 1.2em;
-    color: #000000;
+.menu-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
 }
 
-.item-price {
-    font-size: 1.2em;
-    color: #000000;
+.menu-item {
+    text-align: center;
+    margin: 20px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="phone"],
-textarea,
-select {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.menu-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
 
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: white;
+
+.menu-section {
+    margin: 40px 0;
+}
+
+.centered {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.faq {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.faq h3 {
     cursor: pointer;
+    color: #007BFF;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menu-content a:hover {
-    background-color: #f1f1f1;
+section {
+    padding: 20px;
 }
 
-.menu:hover .menu-content {
-    display: block;
-}
-
-ul li ul.dropdown li {
-    display: block;
-}
-ul li ul.dropdown {
-    width: 100%;
-    background: #f1f1f1;
-    position: absolute;
-    z-index: 999;
+/* submenu */
+nav .submenu {
     display: none;
+    position: absolute;
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
 }
-ul li a:hover {
-    background: #f1f1f1;
-}
-ul li:hover ul.dropdown {
+
+nav ul li:hover .submenu {
     display: block;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.contact-info {
+    text-align: center;
+    margin: 20px;
+}
+
+.address {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.hours {
+    font-weight: bold;
+}
+
+.hours-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hours-list li {
+    margin: 5px 0;
+}
+
+#reservation-form {
+    margin-bottom: 40px;
+}
+
+.responsive-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+section {
+    text-align: center;
+    padding: 50px;
+}
+
+.centered-image {
+    width: 60%; 
+    height: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#cart {
+    border-top: 2px solid #333;
+    padding-top: 20px;
+}
+
+#cart-items {
+    margin-bottom: 20px;
 }
 
 footer {
-    background-color: #ffcc00;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #d2ab0f;
+    padding: 10px 0;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
 }

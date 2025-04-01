@@ -3,69 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eno Kitchen - Gallery</title>
         <link rel="stylesheet" href="styles.css" />
+        <title>Gallery - Eno Kitchen</title>
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.png" alt="Eno Kitchen Logo" />
+            <img src="logo.png" alt="Logo" class="logo" />
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a>
-                        <ul class="dropdown">
-                            <li><a href="faqs.html">FAQ's</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li>
                         <a href="menu.html">Menu</a>
-                        <ul class="dropdown">
+                        <ul class="submenu">
                             <li><a href="breakfast.html">Breakfast</a></li>
                             <li><a href="lunch.html">Lunch</a></li>
                             <li><a href="dinner.html">Dinner</a></li>
                             <li><a href="daily.specials.html">Daily Specials</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="order.html">Order Online</a>
-                        <ul class="dropdown">
-                            <li><a href="catering.html">Catering</a></li>
-                            <li><a href="delivery.pickup.html">Delivery/Pickup</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="events.html">Private Events</a>
-                        <ul class="dropdown">
-                            <li><a href="inquire.html">Inquire</a></li>
-                            <li><a href="reservations.html">Reservations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="careers.html">Careers</a>
-                        <ul class="dropdown">
-                            <li><a href="open.positions.html">Open Positions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="shop.html">Shop</a>
-                        <ul class="dropdown">
-                            <li><a href="gift.cards.html">Gift Cards</a></li>
-                            <li><a href="merch.html">Merch</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                        <ul class="dropdown">
-                            <li><a href="find.a.location.html">Find A Location</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="order.online.html">Order Online</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="gallery">
+
+        <main>
+            <section id="gallery">
             <h2>Gallery</h2>
             <p>
                 Welcome to our gallery page! Here, you'll find a collection of mouth-watering dishes and vibrant moments
@@ -73,7 +39,6 @@
                 our dining experience through these images. Enjoy!
             </p>
         </section>
-        <main>
             <div class="gallery">
                 <img
                     src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -100,9 +65,21 @@
                     src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="Photo 8" />
             </div>
+            <section class="contact-info">
+                <h2>Location</h2>
+                <p class="address">123 Main Street, llentown, PA, 18101</p>
+                <p class="hours">Hours of Availability:</p>
+                <ul class="hours-list">
+                    <li>Monday - Friday: 9 AM - 5 PM</li>
+                    <li>Saturday: 10 AM - 4 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
         </main>
+
         <footer>
             <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

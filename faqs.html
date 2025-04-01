@@ -3,74 +3,85 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eno Kitchen - FAQs</title>
         <link rel="stylesheet" href="styles.css" />
+        <title>FAQs - Eno Kitchen</title>
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.png" alt="Eno Kitchen Logo" />
+            <img src="logo.png" alt="Logo" class="logo" />
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a>
-                        <ul class="dropdown">
-                            <li><a href="faqs.html">FAQ's</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li>
                         <a href="menu.html">Menu</a>
-                        <ul class="dropdown">
+                        <ul class="submenu">
                             <li><a href="breakfast.html">Breakfast</a></li>
                             <li><a href="lunch.html">Lunch</a></li>
                             <li><a href="dinner.html">Dinner</a></li>
                             <li><a href="daily.specials.html">Daily Specials</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="order.html">Order Online</a>
-                        <ul class="dropdown">
-                            <li><a href="catering.html">Catering</a></li>
-                            <li><a href="delivery.pickup.html">Delivery/Pickup</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="events.html">Private Events</a>
-                        <ul class="dropdown">
-                            <li><a href="inquire.html">Inquire</a></li>
-                            <li><a href="reservations.html">Reservations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="careers.html">Careers</a>
-                        <ul class="dropdown">
-                            <li><a href="open.positions.html">Open Positions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="shop.html">Shop</a>
-                        <ul class="dropdown">
-                            <li><a href="gift.cards.html">Gift Cards</a></li>
-                            <li><a href="merch.html">Merch</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                        <ul class="dropdown">
-                            <li><a href="find.a.location.html">Find A Location</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="order.online.html">Order Online</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="faqs">
-            <h2>FAQ's</h2>
-            <p>.....</p>
-        </section>
+
+        <main>
+            <section id="faqs">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <h3>1. What are your opening hours?</h3>
+                    <p>We are open from 9 AM to 5 PM, Monday to Friday, and from 10 AM to 4 PM on Saturday.</p>
+                </div>
+                <div class="faq">
+                    <h3>2. Do you offer vegetarian options?</h3>
+                    <p>Yes, we have a variety of vegetarian options available on our menu.</p>
+                </div>
+                <div class="faq">
+                    <h3>3. Can I make a reservation?</h3>
+                    <p>Yes, you can make a reservation by calling us or booking online through our website.</p>
+                </div>
+                <div class="faq">
+                    <h3>4. Do you offer takeout?</h3>
+                    <p>Yes, we offer takeout services for all menu items.</p>
+                </div>
+                <div class="faq">
+                    <h3>5. Is parking available?</h3>
+                    <p>Yes, we have parking space available for our customers.</p>
+                </div>
+                <div class="faq">
+                    <h3>6. Do you have gluten-free options?</h3>
+                    <p>Yes, we provide gluten-free items; please ask our staff for recommendations.</p>
+                </div>
+                <div class="faq">
+                    <h3>7. Can I host an event at your restaurant?</h3>
+                    <p>Absolutely! Please contact us for more details on hosting private events.</p>
+                </div>
+                <div class="faq">
+                    <h3>8. What forms of payment do you accept?</h3>
+                    <p>We accept cash, credit, and debit cards.</p>
+                </div>
+            </section>
+            <section class="contact-info">
+                <h2>Location</h2>
+                <p class="address">123 Main Street, llentown, PA, 18101</p>
+                <p class="hours">Hours of Availability:</p>
+                <ul class="hours-list">
+                    <li>Monday - Friday: 9 AM - 5 PM</li>
+                    <li>Saturday: 10 AM - 4 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
+        </main>
+
         <footer>
             <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

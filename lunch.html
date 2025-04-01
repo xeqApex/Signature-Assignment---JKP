@@ -3,249 +3,232 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eno Kitchen - Lunch</title>
         <link rel="stylesheet" href="styles.css" />
+        <title>Lunch - Eno Kitchen</title>
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.png" alt="Eno Kitchen Logo" />
+            <img src="logo.png" alt="Logo" class="logo" />
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a>
-                        <ul class="dropdown">
-                            <li><a href="faqs.html">FAQ's</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#about.html">About</a></li>
                     <li>
                         <a href="menu.html">Menu</a>
-                        <ul class="dropdown">
+                        <ul class="submenu">
                             <li><a href="breakfast.html">Breakfast</a></li>
-                            <li><a href="lunch.html">Lunch</a></li>
                             <li><a href="dinner.html">Dinner</a></li>
                             <li><a href="daily.specials.html">Daily Specials</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="order.html">Order Online</a>
-                        <ul class="dropdown">
-                            <li><a href="catering.html">Catering</a></li>
-                            <li><a href="delivery.pickup.html">Delivery/Pickup</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="events.html">Private Events</a>
-                        <ul class="dropdown">
-                            <li><a href="inquire.html">Inquire</a></li>
-                            <li><a href="reservations.html">Reservations</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="careers.html">Careers</a>
-                        <ul class="dropdown">
-                            <li><a href="open.positions.html">Open Positions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="shop.html">Shop</a>
-                        <ul class="dropdown">
-                            <li><a href="gift.cards.html">Gift Cards</a></li>
-                            <li><a href="merch.html">Merch</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                        <ul class="dropdown">
-                            <li><a href="find.a.location.html">Find A Location</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="order.online.html">Order Online</a></li>
+                    <li><a href="#contact">Gallery</a></li>
+                    <li><a href="#contact">Career</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="lunch">
-            <h2>Lunch</h2>
-            <p>Welcome to our Lunch Menu! Join us for a delicious lunch experience with our carefully curated specials for each day of the week. From savory sandwiches to vibrant salads, there's something for everyone to enjoy. Check out our offerings below and treat yourself to a delightful midday meal!</p>
-        </section>
-        <div class="menu-category">
-            <h3>Lunch Sides</h3>
-            <div class="menu-item">
-                <span class="item-name">French Fries</span>
-                <span class="item-price">$3.99</span>
+
+        <main>
+            <section id="lunch">
+                <h2>Lunch</h2>
+                <p>
+                    Welcome to our Lunch Menu! Join us for a delicious lunch experience with our carefully curated
+                    specials for each day of the week. From savory sandwiches to vibrant salads, there's something for
+                    everyone to enjoy. Check out our offerings below and treat yourself to a delightful midday meal!
+                </p>
+            </section>
+            <div class="menu-category">
+                <h3>Lunch Sides</h3>
+                <div class="menu-item">
+                    <span class="item-name">French Fries</span>
+                    <span class="item-price">$3.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Side Salad</span>
+                    <span class="item-price">$4.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Onion Rings</span>
+                    <span class="item-price">$4.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Coleslaw</span>
+                    <span class="item-price">$2.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Garlic Bread</span>
+                    <span class="item-price">$3.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Sweet Potato Fries</span>
+                    <span class="item-price">$4.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Mozzarella Sticks</span>
+                    <span class="item-price">$5.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Buffalo Cauliflower Bites</span>
+                    <span class="item-price">$5.99</span>
+                </div>
             </div>
-            <div class="menu-item">
-                <span class="item-name">Side Salad</span>
-                <span class="item-price">$4.49</span>
+
+            <div class="menu-category">
+                <h3>Sandwiches & Wraps</h3>
+                <div class="menu-item">
+                    <span class="item-name">Classic Club Sandwich</span>
+                    <span class="item-price">$9.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Turkey Avocado Wrap</span>
+                    <span class="item-price">$8.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Vegetable Panini</span>
+                    <span class="item-price">$7.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Grilled Chicken Sandwich</span>
+                    <span class="item-price">$10.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">BLT (Bacon, Lettuce, Tomato)</span>
+                    <span class="item-price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Meatball Sub</span>
+                    <span class="item-price">$9.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Tuna Salad Wrap</span>
+                    <span class="item-price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Pulled Pork Wrap</span>
+                    <span class="item-price">$9.99</span>
+                </div>
             </div>
-            <div class="menu-item">
-                <span class="item-name">Onion Rings</span>
-                <span class="item-price">$4.99</span>
+
+            <div class="menu-category">
+                <h3>Salads</h3>
+                <div class="menu-item">
+                    <span class="item-name">Caesar Salad</span>
+                    <span class="item-price">$9.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Greek Salad</span>
+                    <span class="item-price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Cobb Salad</span>
+                    <span class="item-price">$10.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Caprese Salad</span>
+                    <span class="item-price">$8.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Quinoa Salad Bowl</span>
+                    <span class="item-price">$9.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Asian Sesame Chicken Salad</span>
+                    <span class="item-price">$10.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Spinach and Feta Salad</span>
+                    <span class="item-price">$8.99</span>
+                </div>
             </div>
-            <div class="menu-item">
-                <span class="item-name">Coleslaw</span>
-                <span class="item-price">$2.99</span>
+
+            <div class="menu-category">
+                <h3>Entrees</h3>
+                <div class="menu-item">
+                    <span class="item-name">Grilled Salmon</span>
+                    <span class="item-price">$14.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chicken Alfredo Pasta</span>
+                    <span class="item-price">$12.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Vegetable Stir-Fry</span>
+                    <span class="item-price">$10.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">BBQ Pulled Pork Sandwich</span>
+                    <span class="item-price">$11.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Steak Frites</span>
+                    <span class="item-price">$19.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Stuffed Bell Peppers</span>
+                    <span class="item-price">$13.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Shrimp Tacos</span>
+                    <span class="item-price">$11.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Pesto Pasta Primavera</span>
+                    <span class="item-price">$12.99</span>
+                </div>
             </div>
-            <div class="menu-item">
-                <span class="item-name">Garlic Bread</span>
-                <span class="item-price">$3.49</span>
+
+            <div class="menu-category">
+                <h3>Beverages</h3>
+                <div class="menu-item">
+                    <span class="item-name">Soda</span>
+                    <span class="item-price">$2.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Iced Tea</span>
+                    <span class="item-price">$2.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Lemonade</span>
+                    <span class="item-price">$3.49</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Sparkling Water</span>
+                    <span class="item-price">$2.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Coffee</span>
+                    <span class="item-price">$2.00</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Hot Chocolate</span>
+                    <span class="item-price">$3.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Fruit Smoothie</span>
+                    <span class="item-price">$4.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Iced Matcha Latte</span>
+                    <span class="item-price">$4.49</span>
+                </div>
             </div>
-            <div class="menu-item">
-                <span class="item-name">Sweet Potato Fries</span>
-                <span class="item-price">$4.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Mozzarella Sticks</span>
-                <span class="item-price">$5.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Buffalo Cauliflower Bites</span>
-                <span class="item-price">$5.99</span>
-            </div>
-        </div>
-        
-        <div class="menu-category">
-            <h3>Sandwiches & Wraps</h3>
-            <div class="menu-item">
-                <span class="item-name">Classic Club Sandwich</span>
-                <span class="item-price">$9.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Turkey Avocado Wrap</span>
-                <span class="item-price">$8.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Vegetable Panini</span>
-                <span class="item-price">$7.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Grilled Chicken Sandwich</span>
-                <span class="item-price">$10.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">BLT (Bacon, Lettuce, Tomato)</span>
-                <span class="item-price">$8.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Meatball Sub</span>
-                <span class="item-price">$9.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Tuna Salad Wrap</span>
-                <span class="item-price">$8.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Pulled Pork Wrap</span>
-                <span class="item-price">$9.99</span>
-            </div>
-        </div>
-        
-        <div class="menu-category">
-            <h3>Salads</h3>
-            <div class="menu-item">
-                <span class="item-name">Caesar Salad</span>
-                <span class="item-price">$9.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Greek Salad</span>
-                <span class="item-price">$8.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Cobb Salad</span>
-                <span class="item-price">$10.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Caprese Salad</span>
-                <span class="item-price">$8.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Quinoa Salad Bowl</span>
-                <span class="item-price">$9.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Asian Sesame Chicken Salad</span>
-                <span class="item-price">$10.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Spinach and Feta Salad</span>
-                <span class="item-price">$8.99</span>
-            </div>
-        </div>
-        
-        <div class="menu-category">
-            <h3>Entrees</h3>
-            <div class="menu-item">
-                <span class="item-name">Grilled Salmon</span>
-                <span class="item-price">$14.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Chicken Alfredo Pasta</span>
-                <span class="item-price">$12.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Vegetable Stir-Fry</span>
-                <span class="item-price">$10.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">BBQ Pulled Pork Sandwich</span>
-                <span class="item-price">$11.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Steak Frites</span>
-                <span class="item-price">$19.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Stuffed Bell Peppers</span>
-                <span class="item-price">$13.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Shrimp Tacos</span>
-                <span class="item-price">$11.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Pesto Pasta Primavera</span>
-                <span class="item-price">$12.99</span>
-            </div>
-        </div>
-        
-        <div class="menu-category">
-            <h3>Beverages</h3>
-            <div class="menu-item">
-                <span class="item-name">Soda</span>
-                <span class="item-price">$2.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Iced Tea</span>
-                <span class="item-price">$2.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Lemonade</span>
-                <span class="item-price">$3.49</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Sparkling Water</span>
-                <span class="item-price">$2.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Coffee</span>
-                <span class="item-price">$2.00</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Hot Chocolate</span>
-                <span class="item-price">$3.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Fruit Smoothie</span>
-                <span class="item-price">$4.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Iced Matcha Latte</span>
-                <span class="item-price">$4.49</span>
-            </div>
-        </div>
+            <section class="contact-info">
+                <h2>Location</h2>
+                <p class="address">123 Main Street, llentown, PA, 18101</p>
+                <p class="hours">Hours of Availability:</p>
+                <ul class="hours-list">
+                    <li>Monday - Friday: 9 AM - 5 PM</li>
+                    <li>Saturday: 10 AM - 4 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
+        </main>
+
         <footer>
             <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
