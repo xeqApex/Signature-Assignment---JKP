@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="family-owned restaurant, homemade meals, Allentown PA, local ingredients, Eno, Eno Kitchen, fresh food">
+        <meta
+            name="keywords"
+            content="family-owned restaurant, homemade meals, Allentown PA, local ingredients, Eno, Eno Kitchen, fresh food" />
         <link rel="stylesheet" href="styles.css" />
         <title>Eno Kitchen - John Paintsil</title>
     </head>
@@ -12,6 +14,7 @@
             <img src="logo.png" alt="Logo" class="logo" />
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li>
                         <a href="menu.html">Menu</a>
@@ -23,6 +26,7 @@
                         </ul>
                     </li>
                     <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="order.online.html">Order Online</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="career.html">Career</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -32,6 +36,12 @@
         </header>
 
         <main>
+            <section id="cart">
+                <h2>Your Cart</h2>
+                <div id="cart-items"></div>
+                <h3>Total: $<span id="total-price">0.00</span></h3>
+                <button id="checkout">Proceed to Payment</button>
+            </section>
             <section id="breakfast">
                 <h2>Breakfast</h2>
                 <div class="menu-item">
@@ -112,12 +122,6 @@
                 </div>
             </section>
 
-            <section id="cart">
-                <h2>Your Cart</h2>
-                <div id="cart-items"></div>
-                <h3>Total: $<span id="total-price">0.00</span></h3>
-                <button id="checkout">Proceed to Payment</button>
-            </section>
             <section class="contact-info">
                 <h2>Location</h2>
                 <p class="address">123 Main Street, Allentown, PA, 18101</p>
@@ -132,6 +136,9 @@
 
         <footer>
             <p>&copy; 2025 Eno Kitchen. All rights reserved.</p>
+            <script>
+                document.write("This page was last modified on: " + document.lastModified);
+            </script>
         </footer>
         <script src="script.js"></script>
     </body>

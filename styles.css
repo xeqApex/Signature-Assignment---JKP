@@ -48,7 +48,6 @@ nav a:hover {
     color: white;
 }
 
-
 main {
     padding: 20px;
     background-color: rgba(241, 241, 241, 0.8);
@@ -134,7 +133,6 @@ button {
     border-radius: 10px;
 }
 
-
 .menu-section {
     margin: 40px 0;
 }
@@ -151,8 +149,7 @@ button {
 }
 
 .faq h3 {
-    cursor: pointer;
-    color: #007BFF;
+    color: #007bff;
 }
 
 section {
@@ -179,6 +176,8 @@ nav ul li:hover .submenu {
     border-radius: 10px;
     object-fit: cover;
     transition: transform 0.3s;
+    flex-wrap: wrap;
+    
 }
 
 .gallery img:hover {
@@ -225,7 +224,7 @@ section {
 }
 
 .centered-image {
-    width: 60%; 
+    width: 60%;
     height: auto;
     margin-top: 20px;
     justify-content: center;
