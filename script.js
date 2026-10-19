@@ -22,10 +22,15 @@ function updateCart() {
         cartItemsContainer.appendChild(itemDiv);
     });
     document.getElementById("total-price").textContent = total.toFixed(2);
-    document.getElementById("cart-count").textContent = cart.length;
+   // Update the optional cart counter.
+const cartCount = document.getElementById("cart-count");
+if (cartCount) {
+    cartCount.textContent = cart.length;
+} 
 }
 
-document.getElementById("checkout").addEventListener("click", () => {
+// Register checkout only where available.
+document.getElementById("checkout")?.addEventListener("click", () => {
     if (cart.length === 0) {
         alert("Your cart is empty!");
         return;
@@ -40,7 +45,8 @@ document.getElementById("checkout").addEventListener("click", () => {
     }
 });
 
-document.getElementById("reserveForm").addEventListener("submit", function (event) {
+// Register reservations only where available.
+document.getElementById("reserveForm")?.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
     const date = document.getElementById("date").value;
