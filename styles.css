@@ -63,7 +63,7 @@ section {
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
+input[type="tel"],
 textarea,
 select {
     width: 100%;
