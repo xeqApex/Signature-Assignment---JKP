@@ -22,11 +22,12 @@ function updateCart() {
         cartItemsContainer.appendChild(itemDiv);
     });
     document.getElementById("total-price").textContent = total.toFixed(2);
-   // Update the optional cart counter.
-const cartCount = document.getElementById("cart-count");
-if (cartCount) {
-    cartCount.textContent = cart.length;
-} 
+
+    // Update the optional cart counter.
+    const cartCount = document.getElementById("cart-count");
+    if (cartCount) {
+        cartCount.textContent = cart.length;
+    }
 }
 
 // Register checkout only where available.
